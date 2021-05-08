@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+    <color name="colorPrimary">#04A7E2</color>
+    <color name="colorPrimaryDark">#0479B6</color>
+    <color name="colorAccent">#F3F3F3</color>
+
+    <color name="colorSecondary">#22af8d</color>
+    <color name="colorSecondaryDark">#99ab00</color>
+
+    <color name="azulRedelcom">#04A7E2</color>
+    <color name="azulRedelcom2">#0079e4</color>
+    <color name="grisRedelcom">#F3F3F3</color>
+    <color name="rojoRedelcom">#EE141F</color>
+    <color name="rojoRedelcom2">#6A0A0F</color>
+    <color name="verdeRedelcom">#3EBF05</color>
+    <color name="negroRedelcom">#373737</color>
+    <color name="blancoRedelcom">#FFFFFF</color>
+
+    <color name="card">#E4EAEE</color>
+    <color name="text_nro">#31353c</color>
+
+    <color name="viewBg">#f1f5f8</color>
+    <color name="colorCardView">#f2efef</color>
+    <color name="colorError">#ff0000</color>
+
+    <color name="fullTransparent">#00000000</color>
+
+    <color name="gray">#747474</color>
+    <color name="black_overlay">#434343</color>
+    <color name="row_title">#4c4c4c</color>
+    <color name="blue">#04A7E2</color>
+
+    <color name="mach">#613dd2</color>
+    <color name="mercado_pago">#009ee3</color>
+    <color name="mercado_pago2">#2e2d95</color>
+    <color name="fpay">#4DB000</color>
+    <color name="fpay2">#48a018</color>
+    <color name="chek">#53357d</color>
+    <color name="chek2">#b556c7</color>
+    <color name="mi_pago">#fdfdfd</color>
+    <color name="mi_pago2">#00a1df</color>
+    <color name="one_pay">#ffa80e</color>
+</resources>

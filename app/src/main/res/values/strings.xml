@@ -1,0 +1,49 @@
+<resources>
+    <string name="app_name">Calculadora Redelcom</string>
+    <string name="navigation_drawer_open">Abrir Navegacion</string>
+    <string name="navigation_drawer_close">Cerrar Navegacion</string>
+    <string name="nav_header_title">Calculadora Redelcom</string>
+    <string name="nav_header_subtitle">www.redelcom.cl</string>
+    <string name="nav_header_desc">Cabecera de Navegacion</string>
+    <string name="action_settings">Ajustes</string>
+
+    <string name="menu_ventas">Ventas</string>
+    <string name="menu_ventas_sin_boletas">Ventas sin Boletas</string>
+    <string name="menu_productos">Productos</string>
+    <string name="menu_servicios">Servicios</string>
+    <string name="menu_proveedores">Proveedores</string>
+    <string name="menu_imprimir">Imprimir</string>
+    <string name="menu_terminal">Terminal</string>
+    <string name="menu_anulaciones">Anulaciones</string>
+    <string name="menu_cierre">Cierre</string>
+
+
+    <string name="menu_home">Calculadora</string>
+    <string name="menu_gallery">Tienda</string>
+    <string name="menu_slideshow">Configuracion</string>
+
+    <string name="zero">0</string>
+    <string name="one">1</string>
+    <string name="two">2</string>
+    <string name="three">3</string>
+    <string name="four">4</string>
+    <string name="five">5</string>
+    <string name="six">6</string>
+    <string name="seven">7</string>
+    <string name="eight">8</string>
+    <string name="nine">9</string>
+
+    <string name="clear">C</string>
+    <string name="exponent">^</string>
+    <string name="parentheses">Cobrar $</string>
+    <string name="divide">÷</string>
+    <string name="multiply">×</string>
+    <string name="add">+</string>
+    <string name="subtract">-</string>
+    <string name="plusMinus">+/-</string>
+    <string name="point">.</string>
+    <string name="equals">=</string>
+
+    <string name="backspace"></string>
+    <string name="display"></string>
+</resources>

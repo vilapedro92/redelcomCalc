@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/ic_menu_ventas"
+            android:title="@string/menu_ventas"/>
+        <item
+            android:id="@+id/nav_slideshow"
+            android:icon="@drawable/ic_menu_ventas"
+            android:title="@string/menu_ventas_sin_boletas" />
+        <item
+            android:id="@+id/nav_gallery"
+            android:icon="@drawable/ic_menu_productos"
+            android:title="@string/menu_productos" />
+        <item
+            android:id="@+id/nav_home3"
+            android:icon="@drawable/ic_menu_servicios"
+            android:title="@string/menu_servicios" />
+        <item
+            android:id="@+id/nav_home4"
+            android:icon="@drawable/ic_menu_proveedores"
+            android:title="@string/menu_proveedores" />
+        <item
+            android:id="@+id/nav_home5"
+            android:icon="@drawable/ic_menu_printer"
+            android:title="@string/menu_imprimir" />
+        <item
+            android:id="@+id/nav_home6"
+            android:icon="@drawable/ic_menu_terminal"
+            android:title="@string/menu_terminal" />
+        <item
+            android:id="@+id/nav_home7"
+            android:icon="@drawable/ic_anulaciones2"
+            android:title="@string/menu_anulaciones" />
+        <item
+            android:id="@+id/nav_home8"
+            android:icon="@drawable/ic_baseline_power_settings_new_24"
+            android:title="@string/menu_cierre" />
+
+
+<!--        <item-->
+<!--            android:id="@+id/nav_gallery"-->
+<!--            android:icon="@drawable/ic_menu_gallery"-->
+<!--            android:title="@string/menu_gallery" />-->
+<!--        <item-->
+<!--            android:id="@+id/nav_slideshow"-->
+<!--            android:icon="@drawable/ic_menu_slideshow"-->
+<!--            android:title="@string/menu_slideshow" />-->
+
+
+    </group>
+</menu>
