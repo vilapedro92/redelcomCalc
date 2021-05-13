@@ -36,7 +36,6 @@
             android:layout_height="match_parent">
 
 
-
             <Button
                 android:id="@+id/paymentBTN"
                 style="@style/Widget.AppCompat.Button.Borderless"
@@ -109,7 +108,7 @@
                 android:textSize="30sp"
                 app:backgroundTint="@color/back_num" />
 
-            <ImageButton
+            <Button
                 android:id="@+id/cleanBTN"
                 style="@style/Widget.AppCompat.Button.Borderless"
                 android:layout_width="0dp"
@@ -118,11 +117,9 @@
                 android:layout_weight="1"
                 android:background="@drawable/circle"
                 android:onClick="cleanRegisters"
-                app:backgroundTint="@color/azulRedelcom2"
-                android:src="@drawable/ic_baseline_cleaning_services_24"
-                />
-
-
+                android:text="@string/clean"
+                android:textSize="30sp"
+                app:backgroundTint="@color/azulRedelcom2" />
 
 
         </TableRow>
@@ -186,18 +183,18 @@
                 app:layout_constraintStart_toStartOf="parent"
                 app:srcCompat="@drawable/backspace" />
 
-<!--            <Button-->
-<!--                android:id="@+id/multiplyBTN"-->
-<!--                style="@style/Widget.AppCompat.Button.Borderless"-->
-<!--                android:layout_width="0dp"-->
-<!--                android:layout_height="70dp"-->
-<!--                android:layout_margin="5dp"-->
-<!--                android:layout_weight="1"-->
-<!--                android:background="@drawable/circle"-->
-<!--                android:onClick="multiplyBTN"-->
-<!--                android:text="@string/multiply"-->
-<!--                android:textSize="27sp"-->
-<!--                app:backgroundTint="#e2703a" />-->
+            <!--            <Button-->
+            <!--                android:id="@+id/multiplyBTN"-->
+            <!--                style="@style/Widget.AppCompat.Button.Borderless"-->
+            <!--                android:layout_width="0dp"-->
+            <!--                android:layout_height="70dp"-->
+            <!--                android:layout_margin="5dp"-->
+            <!--                android:layout_weight="1"-->
+            <!--                android:background="@drawable/circle"-->
+            <!--                android:onClick="multiplyBTN"-->
+            <!--                android:text="@string/multiply"-->
+            <!--                android:textSize="27sp"-->
+            <!--                app:backgroundTint="#e2703a" />-->
         </TableRow>
 
         <TableRow
@@ -284,9 +281,19 @@
                 android:layout_weight="1"
                 android:background="@drawable/circle"
                 android:onClick="paymentBTN"
-                app:backgroundTint="@color/azulRedelcom2"
                 android:src="@drawable/ic_baseline_history_243"
-                />
+                app:backgroundTint="@color/azulRedelcom2" />
+            <!--             <Button-->
+            <!--                android:id="@+id/historyBTN"-->
+            <!--                style="@style/Widget.AppCompat.Button.Borderless"-->
+            <!--                android:layout_width="0dp"-->
+            <!--                android:layout_height="70dp"-->
+            <!--                android:layout_margin="5dp"-->
+            <!--                android:layout_weight="1"-->
+            <!--                android:background="@drawable/circle"-->
+            <!--                android:onClick="paymentBTN"-->
+            <!--                android:text="H"-->
+            <!--                app:backgroundTint="@color/azulRedelcom2" />-->
 
             <!--            <Button-->
             <!--                android:id="@+id/pointBTN"-->
@@ -301,33 +308,21 @@
             <!--                android:textSize="24sp"-->
             <!--                app:backgroundTint="#194350" />-->
 
-<!--            <Button-->
-<!--                android:id="@+id/equalsBTN"-->
-<!--                style="@style/Widget.AppCompat.Button.Borderless"-->
-<!--                android:layout_width="0dp"-->
-<!--                android:layout_height="70dp"-->
-<!--                android:layout_margin="5dp"-->
-<!--                android:layout_weight="1"-->
-<!--                android:background="@drawable/circle"-->
-<!--                android:backgroundTint="#43A047"-->
-<!--                android:onClick="equalsBTN"-->
-<!--                android:text="@string/equals"-->
-<!--                android:textSize="24sp"-->
-<!--                app:backgroundTint="#e2703a" />-->
+            <!--            <Button-->
+            <!--                android:id="@+id/equalsBTN"-->
+            <!--                style="@style/Widget.AppCompat.Button.Borderless"-->
+            <!--                android:layout_width="0dp"-->
+            <!--                android:layout_height="70dp"-->
+            <!--                android:layout_margin="5dp"-->
+            <!--                android:layout_weight="1"-->
+            <!--                android:background="@drawable/circle"-->
+            <!--                android:backgroundTint="#43A047"-->
+            <!--                android:onClick="equalsBTN"-->
+            <!--                android:text="@string/equals"-->
+            <!--                android:textSize="24sp"-->
+            <!--                app:backgroundTint="#e2703a" />-->
         </TableRow>
     </TableLayout>
-
-<!--    <Spinner-->
-<!--        android:id="@+id/spinner1"-->
-<!--        android:layout_width="83dp"-->
-<!--        android:layout_height="67dp"-->
-<!--        android:layout_marginTop="4dp"-->
-<!--        android:background="@android:drawable/btn_dropdown"-->
-<!--        android:spinnerMode="dropdown"-->
-<!--        app:layout_constraintEnd_toStartOf="@+id/input"-->
-<!--        app:layout_constraintStart_toStartOf="parent"-->
-<!--        app:layout_constraintTop_toTopOf="parent"-->
-<!--        tools:ignore="MissingConstraints" />-->
 
     <EditText
         android:id="@+id/input"
@@ -344,5 +339,6 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         tools:ignore="LabelFor" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>

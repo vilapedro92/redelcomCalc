@@ -4,12 +4,15 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.text.SpannableStringBuilder;
 import android.util.Log;
+import android.view.LayoutInflater;
 import android.view.View;
 import android.view.Menu;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ImageButton;
 import android.widget.Toast;
 
+import com.google.android.material.bottomsheet.BottomSheetDialog;
 import com.google.android.material.snackbar.Snackbar;
 import com.google.android.material.navigation.NavigationView;
 
@@ -31,23 +34,22 @@ public class MainActivity extends AppCompatActivity {
     private EditText display;
     private Button pay;
     private Button add;
+    private ImageButton sheetDialog;
     private String totalPay = "0";
     private ArrayList<Integer> valuesList = new ArrayList<Integer>();
     private int sum = 0;
     private boolean isActive = false;
-
-//    Spinner dropdown = findViewById(R.id.spinner1);
-//    String[] items = new String[]{"1", "2", "three"};
-//    ArrayAdapter<String> adapter = new ArrayAdapter<>(this, android.R.layout.simple_spinner_dropdown_item, items);
+    private BottomSheetDialog bottomSheetDialog;
+    private Bundle bundleSendArray;
 
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-//        dropdown.setAdapter(adapter);//tempo
         setContentView(R.layout.activity_main);
         Toolbar toolbar = findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
+        sheetDialog = findViewById(R.id.historyBTN);
         display = findViewById(R.id.input);
         add = findViewById(R.id.addBTN);
         pay = findViewById(R.id.paymentBTN);
@@ -59,6 +61,17 @@ public class MainActivity extends AppCompatActivity {
                 if (getString(R.string.display).equals(display.getText().toString())) {
                     display.setText("");
                 }
+            }
+        });
+        sheetDialog.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                DialogHistory mdh = new DialogHistory();
+                bundleSendArray = new Bundle();
+                bundleSendArray.putIntegerArrayList("valueList", valuesList);
+                bundleSendArray.putString("prueba", "prueba");
+                mdh.setArguments(bundleSendArray);
+                mdh.show(getFragmentManager(), "Hitorial");
             }
         });
 
@@ -75,18 +88,8 @@ public class MainActivity extends AppCompatActivity {
         } catch (Exception e) {
             e.printStackTrace();
         }
-//        FloatingActionButton fab = findViewById(R.id.fab);
-//        fab.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View view) {
-//                Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
-//                        .setAction("Action", null).show();
-//            }
-//        });
         DrawerLayout drawer = findViewById(R.id.drawer_layout);
         NavigationView navigationView = findViewById(R.id.nav_view);
-        // Passing each menu ID as a set of Ids because each
-        // menu should be considered as top level destinations.
         mAppBarConfiguration = new AppBarConfiguration.Builder(
                 R.id.nav_home, R.id.nav_gallery, R.id.nav_slideshow)
                 .setDrawerLayout(drawer)
@@ -261,8 +264,6 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void addBTN(View view) {
-
-        //valifddar cuando el campo esta vacion o es un NaN
         if (display.getText().toString().length() != 0) {
             isActive = true;
             add.setSelected(true);

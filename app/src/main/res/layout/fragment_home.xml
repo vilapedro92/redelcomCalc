@@ -6,17 +6,312 @@
     android:layout_height="match_parent"
     tools:context=".ui.home.HomeFragment">
 
-<!--    <TextView-->
-<!--        android:id="@+id/text_home"-->
+<!--    <TableLayout-->
+<!--        android:id="@+id/tableLayout"-->
 <!--        android:layout_width="match_parent"-->
 <!--        android:layout_height="wrap_content"-->
-<!--        android:layout_marginStart="8dp"-->
-<!--        android:layout_marginTop="8dp"-->
-<!--        android:layout_marginEnd="8dp"-->
-<!--        android:textAlignment="center"-->
-<!--        android:textSize="20sp"-->
+<!--        android:layout_marginTop="30dp"-->
 <!--        app:layout_constraintBottom_toBottomOf="parent"-->
 <!--        app:layout_constraintEnd_toEndOf="parent"-->
 <!--        app:layout_constraintStart_toStartOf="parent"-->
-<!--        app:layout_constraintTop_toTopOf="parent" />-->
+<!--        app:layout_constraintTop_toBottomOf="@+id/input"-->
+<!--        app:layout_constraintVertical_bias="0.95">-->
+
+<!--        <TableRow-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="match_parent">-->
+
+
+<!--            <Button-->
+<!--                android:id="@+id/paymentBTN"-->
+<!--                style="@style/Widget.AppCompat.Button.Borderless"-->
+<!--                android:layout_width="0dp"-->
+<!--                android:layout_height="70dp"-->
+<!--                android:layout_margin="5dp"-->
+<!--                android:layout_weight="3"-->
+<!--                android:background="@drawable/circle"-->
+<!--                android:onClick="paymentBTN"-->
+<!--                android:text="@string/parentheses"-->
+<!--                android:textSize="24sp"-->
+<!--                app:backgroundTint="@color/azulRedelcom" />-->
+
+<!--            &lt;!&ndash;            <Button&ndash;&gt;-->
+<!--            &lt;!&ndash;                android:id="@+id/clearBTN"&ndash;&gt;-->
+<!--            &lt;!&ndash;                style="@style/Widget.AppCompat.Button.Borderless"&ndash;&gt;-->
+<!--            &lt;!&ndash;                android:layout_width="0dp"&ndash;&gt;-->
+<!--            &lt;!&ndash;                android:layout_height="70dp"&ndash;&gt;-->
+<!--            &lt;!&ndash;                android:layout_margin="5dp"&ndash;&gt;-->
+<!--            &lt;!&ndash;                android:layout_weight="1"&ndash;&gt;-->
+<!--            &lt;!&ndash;                android:background="@drawable/circle"&ndash;&gt;-->
+<!--            &lt;!&ndash;                android:onClick="clearBTN"&ndash;&gt;-->
+<!--            &lt;!&ndash;                android:text="@string/clear"&ndash;&gt;-->
+<!--            &lt;!&ndash;                android:textSize="24sp"&ndash;&gt;-->
+<!--            &lt;!&ndash;                app:backgroundTint="#5f939a" />&ndash;&gt;-->
+
+
+<!--        </TableRow>-->
+
+<!--        <TableRow-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="match_parent">-->
+
+<!--            <Button-->
+<!--                android:id="@+id/sevenBTN"-->
+<!--                style="@style/Widget.AppCompat.Button.Borderless"-->
+<!--                android:layout_width="0dp"-->
+<!--                android:layout_height="70dp"-->
+<!--                android:layout_margin="5dp"-->
+<!--                android:layout_weight="1"-->
+<!--                android:background="@drawable/circle"-->
+<!--                android:onClick="sevenBTN"-->
+<!--                android:text="@string/seven"-->
+<!--                android:textSize="30sp"-->
+<!--                app:backgroundTint="@color/back_num" />-->
+
+<!--            <Button-->
+<!--                android:id="@+id/eightBTN"-->
+<!--                style="@style/Widget.AppCompat.Button.Borderless"-->
+<!--                android:layout_width="0dp"-->
+<!--                android:layout_height="70dp"-->
+<!--                android:layout_margin="5dp"-->
+<!--                android:layout_weight="1"-->
+<!--                android:background="@drawable/circle"-->
+<!--                android:onClick="eightBTN"-->
+<!--                android:text="@string/eight"-->
+<!--                android:textSize="30sp"-->
+<!--                app:backgroundTint="@color/back_num" />-->
+
+<!--            <Button-->
+<!--                android:id="@+id/nineBTN"-->
+<!--                style="@style/Widget.AppCompat.Button.Borderless"-->
+<!--                android:layout_width="0dp"-->
+<!--                android:layout_height="70dp"-->
+<!--                android:layout_margin="5dp"-->
+<!--                android:layout_weight="1"-->
+<!--                android:background="@drawable/circle"-->
+<!--                android:onClick="nineBTN"-->
+<!--                android:text="@string/nine"-->
+<!--                android:textSize="30sp"-->
+<!--                app:backgroundTint="@color/back_num" />-->
+
+<!--            <ImageButton-->
+<!--                android:id="@+id/cleanBTN"-->
+<!--                style="@style/Widget.AppCompat.Button.Borderless"-->
+<!--                android:layout_width="0dp"-->
+<!--                android:layout_height="70dp"-->
+<!--                android:layout_margin="5dp"-->
+<!--                android:layout_weight="1"-->
+<!--                android:background="@drawable/circle"-->
+<!--                android:onClick="cleanRegisters"-->
+<!--                android:src="@drawable/ic_baseline_cleaning_services_24"-->
+<!--                app:backgroundTint="@color/azulRedelcom2" />-->
+
+
+<!--        </TableRow>-->
+
+<!--        <TableRow-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="match_parent">-->
+
+<!--            <Button-->
+<!--                android:id="@+id/fourBTN"-->
+<!--                style="@style/Widget.AppCompat.Button.Borderless"-->
+<!--                android:layout_width="0dp"-->
+<!--                android:layout_height="70dp"-->
+<!--                android:layout_margin="5dp"-->
+<!--                android:layout_weight="1"-->
+<!--                android:background="@drawable/circle"-->
+<!--                android:onClick="fourBTN"-->
+<!--                android:text="@string/four"-->
+<!--                android:textSize="30sp"-->
+<!--                app:backgroundTint="@color/back_num" />-->
+
+<!--            <Button-->
+<!--                android:id="@+id/fiveBTN"-->
+<!--                style="@style/Widget.AppCompat.Button.Borderless"-->
+<!--                android:layout_width="0dp"-->
+<!--                android:layout_height="70dp"-->
+<!--                android:layout_margin="5dp"-->
+<!--                android:layout_weight="1"-->
+<!--                android:background="@drawable/circle"-->
+<!--                android:onClick="fiveBTN"-->
+<!--                android:text="@string/five"-->
+<!--                android:textSize="30sp"-->
+<!--                app:backgroundTint="@color/back_num" />-->
+
+<!--            <Button-->
+<!--                android:id="@+id/sixBTN"-->
+<!--                style="@style/Widget.AppCompat.Button.Borderless"-->
+<!--                android:layout_width="0dp"-->
+<!--                android:layout_height="70dp"-->
+<!--                android:layout_margin="5dp"-->
+<!--                android:layout_weight="1"-->
+<!--                android:background="@drawable/circle"-->
+<!--                android:onClick="sixBTN"-->
+<!--                android:text="@string/six"-->
+<!--                android:textSize="30sp"-->
+<!--                app:backgroundTint="@color/back_num" />-->
+
+<!--            <ImageButton-->
+<!--                android:id="@+id/backspaceBTN"-->
+<!--                style="@style/Widget.AppCompat.Button.Borderless"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="70dp"-->
+<!--                android:layout_margin="6dp"-->
+<!--                android:background="@drawable/circle"-->
+<!--                android:backgroundTint="@color/azulRedelcom2"-->
+<!--                android:contentDescription="@string/backspace"-->
+<!--                android:onClick="backSpaceBTN"-->
+<!--                app:layout_constraintBottom_toTopOf="@+id/tableLayout"-->
+<!--                app:layout_constraintEnd_toEndOf="parent"-->
+<!--                app:layout_constraintHorizontal_bias="1.0"-->
+<!--                app:layout_constraintStart_toStartOf="parent"-->
+<!--                app:srcCompat="@drawable/backspace" />-->
+
+<!--            &lt;!&ndash;            <Button&ndash;&gt;-->
+<!--            &lt;!&ndash;                android:id="@+id/multiplyBTN"&ndash;&gt;-->
+<!--            &lt;!&ndash;                style="@style/Widget.AppCompat.Button.Borderless"&ndash;&gt;-->
+<!--            &lt;!&ndash;                android:layout_width="0dp"&ndash;&gt;-->
+<!--            &lt;!&ndash;                android:layout_height="70dp"&ndash;&gt;-->
+<!--            &lt;!&ndash;                android:layout_margin="5dp"&ndash;&gt;-->
+<!--            &lt;!&ndash;                android:layout_weight="1"&ndash;&gt;-->
+<!--            &lt;!&ndash;                android:background="@drawable/circle"&ndash;&gt;-->
+<!--            &lt;!&ndash;                android:onClick="multiplyBTN"&ndash;&gt;-->
+<!--            &lt;!&ndash;                android:text="@string/multiply"&ndash;&gt;-->
+<!--            &lt;!&ndash;                android:textSize="27sp"&ndash;&gt;-->
+<!--            &lt;!&ndash;                app:backgroundTint="#e2703a" />&ndash;&gt;-->
+<!--        </TableRow>-->
+
+<!--        <TableRow-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="match_parent">-->
+
+<!--            <Button-->
+<!--                android:id="@+id/oneBTN"-->
+<!--                style="@style/Widget.AppCompat.Button.Borderless"-->
+<!--                android:layout_width="0dp"-->
+<!--                android:layout_height="70dp"-->
+<!--                android:layout_margin="5dp"-->
+<!--                android:layout_weight="1"-->
+<!--                android:background="@drawable/circle"-->
+<!--                android:onClick="oneBTN"-->
+<!--                android:text="@string/one"-->
+<!--                android:textSize="30sp"-->
+<!--                app:backgroundTint="@color/back_num" />-->
+
+<!--            <Button-->
+<!--                android:id="@+id/twoBTN"-->
+<!--                style="@style/Widget.AppCompat.Button.Borderless"-->
+<!--                android:layout_width="0dp"-->
+<!--                android:layout_height="70dp"-->
+<!--                android:layout_margin="5dp"-->
+<!--                android:layout_weight="1"-->
+<!--                android:background="@drawable/circle"-->
+<!--                android:onClick="twoBTN"-->
+<!--                android:text="@string/two"-->
+<!--                android:textSize="30sp"-->
+<!--                app:backgroundTint="@color/back_num" />-->
+
+<!--            <Button-->
+<!--                android:id="@+id/threeBTN"-->
+<!--                style="@style/Widget.AppCompat.Button.Borderless"-->
+<!--                android:layout_width="0dp"-->
+<!--                android:layout_height="70dp"-->
+<!--                android:layout_margin="5dp"-->
+<!--                android:layout_weight="1"-->
+<!--                android:background="@drawable/circle"-->
+<!--                android:onClick="threeBTN"-->
+<!--                android:text="@string/three"-->
+<!--                android:textSize="30sp"-->
+<!--                app:backgroundTint="@color/back_num" />-->
+
+<!--            <Button-->
+<!--                android:id="@+id/addBTN"-->
+<!--                style="@style/Widget.AppCompat.Button.Borderless"-->
+<!--                android:layout_width="0dp"-->
+<!--                android:layout_height="70dp"-->
+<!--                android:layout_margin="5dp"-->
+<!--                android:layout_weight="1"-->
+<!--                android:background="@drawable/circle"-->
+<!--                android:onClick="addBTN"-->
+<!--                android:text="@string/add"-->
+<!--                android:textSize="31sp"-->
+<!--                app:backgroundTint="@color/back_add" />-->
+<!--        </TableRow>-->
+
+<!--        <TableRow-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="match_parent">-->
+
+
+<!--            <Button-->
+<!--                android:id="@+id/zeroBTN"-->
+<!--                style="@style/Widget.AppCompat.Button.Borderless"-->
+<!--                android:layout_width="0dp"-->
+<!--                android:layout_height="70dp"-->
+<!--                android:layout_margin="5dp"-->
+<!--                android:layout_weight="3"-->
+<!--                android:background="@drawable/circle"-->
+<!--                android:onClick="zeroBTN"-->
+<!--                android:text="@string/zero"-->
+<!--                android:textSize="30sp"-->
+<!--                app:backgroundTint="@color/back_num" />-->
+
+<!--            <ImageButton-->
+<!--                android:id="@+id/historyBTN"-->
+<!--                style="@style/Widget.AppCompat.Button.Borderless"-->
+<!--                android:layout_width="0dp"-->
+<!--                android:layout_height="70dp"-->
+<!--                android:layout_margin="5dp"-->
+<!--                android:layout_weight="1"-->
+<!--                android:background="@drawable/circle"-->
+<!--                android:onClick="paymentBTN"-->
+<!--                android:src="@drawable/ic_baseline_history_243"-->
+<!--                app:backgroundTint="@color/azulRedelcom2" />-->
+
+<!--            &lt;!&ndash;            <Button&ndash;&gt;-->
+<!--            &lt;!&ndash;                android:id="@+id/pointBTN"&ndash;&gt;-->
+<!--            &lt;!&ndash;                style="@style/Widget.AppCompat.Button.Borderless"&ndash;&gt;-->
+<!--            &lt;!&ndash;                android:layout_width="0dp"&ndash;&gt;-->
+<!--            &lt;!&ndash;                android:layout_height="70dp"&ndash;&gt;-->
+<!--            &lt;!&ndash;                android:layout_margin="5dp"&ndash;&gt;-->
+<!--            &lt;!&ndash;                android:layout_weight="1"&ndash;&gt;-->
+<!--            &lt;!&ndash;                android:background="@drawable/circle"&ndash;&gt;-->
+<!--            &lt;!&ndash;                android:onClick="pointBTN"&ndash;&gt;-->
+<!--            &lt;!&ndash;                android:text="@string/point"&ndash;&gt;-->
+<!--            &lt;!&ndash;                android:textSize="24sp"&ndash;&gt;-->
+<!--            &lt;!&ndash;                app:backgroundTint="#194350" />&ndash;&gt;-->
+
+<!--            &lt;!&ndash;            <Button&ndash;&gt;-->
+<!--            &lt;!&ndash;                android:id="@+id/equalsBTN"&ndash;&gt;-->
+<!--            &lt;!&ndash;                style="@style/Widget.AppCompat.Button.Borderless"&ndash;&gt;-->
+<!--            &lt;!&ndash;                android:layout_width="0dp"&ndash;&gt;-->
+<!--            &lt;!&ndash;                android:layout_height="70dp"&ndash;&gt;-->
+<!--            &lt;!&ndash;                android:layout_margin="5dp"&ndash;&gt;-->
+<!--            &lt;!&ndash;                android:layout_weight="1"&ndash;&gt;-->
+<!--            &lt;!&ndash;                android:background="@drawable/circle"&ndash;&gt;-->
+<!--            &lt;!&ndash;                android:backgroundTint="#43A047"&ndash;&gt;-->
+<!--            &lt;!&ndash;                android:onClick="equalsBTN"&ndash;&gt;-->
+<!--            &lt;!&ndash;                android:text="@string/equals"&ndash;&gt;-->
+<!--            &lt;!&ndash;                android:textSize="24sp"&ndash;&gt;-->
+<!--            &lt;!&ndash;                app:backgroundTint="#e2703a" />&ndash;&gt;-->
+<!--        </TableRow>-->
+<!--    </TableLayout>-->
+
+<!--    <EditText-->
+<!--        android:id="@+id/input"-->
+<!--        android:layout_width="413dp"-->
+<!--        android:layout_height="66dp"-->
+<!--        android:layout_marginTop="4dp"-->
+<!--        android:autofillHints="false"-->
+<!--        android:inputType="none"-->
+<!--        android:text="@string/display"-->
+<!--        android:textAlignment="textEnd"-->
+<!--        android:textSize="36sp"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintHorizontal_bias="1.0"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toTopOf="parent"-->
+<!--        tools:ignore="LabelFor" />-->
+
 </androidx.constraintlayout.widget.ConstraintLayout>

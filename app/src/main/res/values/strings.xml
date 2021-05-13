@@ -43,6 +43,7 @@
     <string name="plusMinus">+/-</string>
     <string name="point">.</string>
     <string name="equals">=</string>
+    <string name="clean">C</string>
 
     <string name="backspace"></string>
     <string name="display"></string>
