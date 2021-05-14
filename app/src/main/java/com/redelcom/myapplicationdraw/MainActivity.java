@@ -171,16 +171,19 @@ public class MainActivity extends AppCompatActivity {
 
     public void zeroBTN(View view) {
         if (isActive) {
-            cleanEdit();
+//            cleanEdit();
             isActive = false;
             add.setSelected(false);
+        } else {
+            if (display.getText().toString().length() != 0) {
+                updateText("0");
+            }
         }
-        updateText("0");
     }
 
     public void oneBTN(View view) {
         if (isActive) {
-            cleanEdit();
+//            cleanEdit();
             isActive = false;
             add.setSelected(false);
         }
@@ -189,7 +192,7 @@ public class MainActivity extends AppCompatActivity {
 
     public void twoBTN(View view) {
         if (isActive) {
-            cleanEdit();
+//            cleanEdit();
             isActive = false;
             add.setSelected(false);
         }
@@ -198,7 +201,7 @@ public class MainActivity extends AppCompatActivity {
 
     public void threeBTN(View view) {
         if (isActive) {
-            cleanEdit();
+//            cleanEdit();
             isActive = false;
             add.setSelected(false);
         }
@@ -207,7 +210,7 @@ public class MainActivity extends AppCompatActivity {
 
     public void fourBTN(View view) {
         if (isActive) {
-            cleanEdit();
+//            cleanEdit();
             isActive = false;
             add.setSelected(false);
         }
@@ -216,7 +219,7 @@ public class MainActivity extends AppCompatActivity {
 
     public void fiveBTN(View view) {
         if (isActive) {
-            cleanEdit();
+//            cleanEdit();
             isActive = false;
             add.setSelected(false);
         }
@@ -225,7 +228,7 @@ public class MainActivity extends AppCompatActivity {
 
     public void sixBTN(View view) {
         if (isActive) {
-            cleanEdit();
+//            cleanEdit();
             isActive = false;
             add.setSelected(false);
         }
@@ -234,7 +237,7 @@ public class MainActivity extends AppCompatActivity {
 
     public void sevenBTN(View view) {
         if (isActive) {
-            cleanEdit();
+//            cleanEdit();
             isActive = false;
             add.setSelected(false);
         }
@@ -243,7 +246,7 @@ public class MainActivity extends AppCompatActivity {
 
     public void eightBTN(View view) {
         if (isActive) {
-            cleanEdit();
+//            cleanEdit();
             isActive = false;
             add.setSelected(false);
         }
@@ -252,7 +255,7 @@ public class MainActivity extends AppCompatActivity {
 
     public void nineBTN(View view) {
         if (isActive) {
-            cleanEdit();
+//            cleanEdit();
             isActive = false;
             add.setSelected(false);
         }
@@ -284,6 +287,7 @@ public class MainActivity extends AppCompatActivity {
                 pay.setText("COBRAR $ ".concat(result));
                 totalPay = result;
             }
+            cleanEdit();
         }
 
     }
