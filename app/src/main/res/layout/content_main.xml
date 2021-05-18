@@ -47,7 +47,7 @@
                 app:backgroundTint="@color/azulRedelcom2" />
 
             <TextView
-                android:id="@+id/textView5"
+                android:id="@+id/cadenaList"
                 android:layout_width="wrap_content"
                 android:layout_height="50dp"
                 android:layout_weight="4"

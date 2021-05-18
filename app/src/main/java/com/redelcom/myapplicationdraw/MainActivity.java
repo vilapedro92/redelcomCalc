@@ -10,6 +10,7 @@ import android.view.Menu;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageButton;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import com.google.android.material.bottomsheet.BottomSheetDialog;
@@ -32,6 +33,7 @@ public class MainActivity extends AppCompatActivity {
 
     private AppBarConfiguration mAppBarConfiguration;
     private EditText display;
+    private TextView textViewCadena;
     private Button pay;
     private Button add;
     private ImageButton sheetDialog;
@@ -51,6 +53,7 @@ public class MainActivity extends AppCompatActivity {
         setSupportActionBar(toolbar);
         sheetDialog = findViewById(R.id.historyBTN);
         display = findViewById(R.id.input);
+        textViewCadena = findViewById(R.id.cadenaList);
         add = findViewById(R.id.addBTN);
         pay = findViewById(R.id.paymentBTN);
         pay.setText(pay.getText().toString().concat(totalPay));
@@ -305,6 +308,12 @@ public class MainActivity extends AppCompatActivity {
             }
             cleanEdit();
         }
+
+    }
+
+    public void setCadenaTextView() {
+        //recorrer el array scr los valores y ponerlos en una cadena string con el +.
+        //setearlo en el text veiw.......
 
     }
 
