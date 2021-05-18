@@ -123,7 +123,11 @@ public class MainActivity extends AppCompatActivity {
             display.setSelection(cursorPos + 1);
         } else {
             display.setText(String.format("%s%s%s", leftSrt, strToAdd, rightStr));
-            display.setSelection(cursorPos + 1);
+            if (strToAdd.length() > 1) {
+                display.setSelection(cursorPos + 2);
+            } else {
+                display.setSelection(cursorPos + 1);
+            }
         }
     }
 
@@ -177,6 +181,18 @@ public class MainActivity extends AppCompatActivity {
         } else {
             if (display.getText().toString().length() != 0) {
                 updateText("0");
+            }
+        }
+    }
+
+    public void zerozeroBTN(View view) {
+        if (isActive) {
+//            cleanEdit();
+            isActive = false;
+            add.setSelected(false);
+        } else {
+            if (display.getText().toString().length() != 0) {
+                updateText("00");
             }
         }
     }
