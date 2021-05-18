@@ -37,19 +37,26 @@
             <ImageButton
                 android:id="@+id/historyBTN"
                 style="@style/Widget.AppCompat.Button.Borderless"
-                android:layout_width="0dp"
+                android:layout_width="5dp"
                 android:layout_height="60dp"
                 android:layout_margin="5dp"
                 android:layout_weight="1"
                 android:background="@drawable/circle2"
                 android:onClick="paymentBTN"
-                android:src="@drawable/ic_baseline_history_243"
+                android:src="@drawable/ic_baseline_format_list_bulleted_24"
                 app:backgroundTint="@color/azulRedelcom2" />
+
+            <TextView
+                android:id="@+id/textView5"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:layout_weight="4"
+                android:text="" />
 
             <Button
                 android:id="@+id/cleanBTN"
                 style="@style/Widget.AppCompat.Button.Borderless"
-                android:layout_width="0dp"
+                android:layout_width="5dp"
                 android:layout_height="60dp"
                 android:layout_margin="5dp"
                 android:layout_weight="1"
